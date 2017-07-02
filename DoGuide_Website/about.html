@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="">
+    <head>
+    <meta charset="utf-8" />
+    <title>DoGuide</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="DoGuide" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!--Animate wow (CSS+Scripts)-->
+    <link rel="stylesheet" href="css/libs/animate.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <script src="dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+    </script>
+
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/Site_JavaScript.js"></script>
+    <script src="https://webdevelopmentcourse.github.io/contactUs/WebDevelopmentCourse/jScripts/contactUs.js" type="text/javascript"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1500, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+
+    </script>
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            var os = $('#div1').offset().top;
+            var ht = $('#div1').height();
+            if (scroll > os + ht) {
+                $('#div2').addClass('blue');
+            }
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <!--לוגו + תפריט ניווט-->
+
+    <header>
+        <div id="logoarea">
+            <a href="index.html"><img id="logo" src="../images/logo.png" alt="DoGuide Logo" /></a>
+        </div>
+        <nav class="menu" id="menuNav">
+            <ul>
+                <li> <a href="../DoGuide_Website/index.html#logoarea" class="unActiveAndHover"> דף הבית </a> </li>
+                <li id="doifitLi"> <a id="doifitA" href="index.html/#do-i-fit" class="unActiveAndHover"> האם אני מתאים? </a> </li>
+                <li id="beforeAdoptingLi">
+                    <a id="beforeAdoptingA" href="#before-adopting-title" class="unActiveAndHover"> לפני האימוץ </a>
+
+                    <ul>
+                        <li><a href="index.html#tips2">טיפים</a></li>
+                        <li><a href="#preparations2">הכנות</a></li>
+                        <li><a href="#where-is-the-dog">איפה הכלב?</a></li>
+                    </ul>
+
+                </li>
+                <li id="duringLi">
+                    <a id="duringA" href="#during-title" class="unActiveAndHover"> במהלך האימוץ </a>
+
+                    <ul>
+                        <li><a href="#what-now">אימצתי, מה עכשיו?</a></li>
+                        <li><a href="#training">אילוף</a></li>
+                        <li><a href="#places-to-go">מקומות שחשוב לבקר</a></li>
+                        <li><a href="#inspiring-stories-during">סיפורי השראה</a></li>
+                    </ul>
+
+                </li>
+                <li id="afterLi">
+                    <a id="afterA" href="#after-title" class="unActiveAndHover"> אחרי האימוץ </a>
+
+                    <ul>
+                        <li><a href="#how-to-deal">איך להתמודד?</a></li>
+                        <li><a href="#inspiring-stories-after">סיפורי השראה</a></li>
+
+                    </ul>
+
+                </li>
+                <li id="contactLi"> <a id="contactA" href="#contact-title" class="unActiveAndHover"> דרכי התקשרות </a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--תחילת קונטיינר-->
+
+<body>
+    <div id="container">
+        <section id="about" class="parallextext">
+        <h1>אודות DoGuide</h1>
+        <p>
+            האתר הינו מדריך לגידול כלב נחייה, מטרת האתר הינה לתת מענה לכל מי שמעוניין לגדל כלב נחיה ונמצא בתהליך של גידול גור נחיה.
+            <br>פותח על ידי: <p/>
+            <ul>
+            <li>ענבר גולדברג</li>
+                <li>שיר בריקמן</li>
+                <li>ארז דבח</li>
+            </ul>
+<p>
+            במסגרת פרויקט משולב לקורסים בשנה א', תשע"ז:</p>
+            <ul> <li>אפיון ממשק וחווית משתמש</li>
+                <li>עיצוב ממשק משתמש</li>
+                <li>פיתוח אתרי אינטרנט</li>
+                <li>נגישות למחשב - אתגר לאנשים עם מוגבלות</li>
+                     </ul>
+            <p>
+          האתר אופיין ועוצב לפי עקרונות של "עיצוב ממשק" ופותח ב- HTML5 ו-CSS3 תוך התחשבות בעקרונות "נגישות אתרים".
+             להלן המסכים שפותחו באתר: </p>
+            <ul>
+           <li><a href="index.html">דף הבית</a></li>
+                לעדכן פה את הכל לפי התפריט ניווטטטט
+                <li>  <a href=#>האם אני מתאים?</a></li>
+                <li> <a href=#>טיפים (לפני האימוץ)</a></li>
+                <li><a href=#>אילוף</a></li>
+                <li><a href=#>דרכי התקשרות</a></li>
+          
+           
+            
+                </ul>
+    <p>
+        <a href="index.html"> חזרה לעמוד הבית</a>
+        </p>
+            </section>
+    </div>
+      <footer id="footerA">
+       <nav id="footer-nav">
+           <ul>
+               <li><a href="about.html">אודות</a></li>
+               
+               <li><a href="contactus.html">צור קשר</a></li> 
+              
+               <li><a href="sitemap.html">מפת אתר</a></li> 
+           </ul>
+       </nav>
+    </footer>
+</body>
+</html>
